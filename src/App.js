@@ -6,7 +6,7 @@ import Todos from "./components/Todos";
 function App() {
   return (
     <div className="App" style={{ textAlign: "center" }}>
-      {/* helmet for the tab browser */}
+     
       <Helmet>
         <title>List To Do</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>

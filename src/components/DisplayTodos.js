@@ -33,8 +33,7 @@ const DisplayTodos = ({ todos, removeTodo, editTodo, completeTodo }) => {
         <button onClick={() => setSort("completed")}>Completed</button>
       </div>
       <ul>
-        {/* for the active items, when click the active button we 
-        gonna display those with completed: false  */}
+        
         {todos.length > 0 && sort === "active"
           ? todos.map((item) => {
               return (
@@ -50,8 +49,7 @@ const DisplayTodos = ({ todos, removeTodo, editTodo, completeTodo }) => {
               );
             })
           : null}
-        {/* for the completed items, when click the completed button we 
-        gonna display those with completed: true */}
+
         {todos.length > 0 && sort === "completed"
           ? todos.map((item) => {
               return (
@@ -67,7 +65,7 @@ const DisplayTodos = ({ todos, removeTodo, editTodo, completeTodo }) => {
               );
             })
           : null}
-        {/*  to display all the items we don't need the complete boolean */}
+     
         {todos.length > 0 && sort === "all"
           ? todos.map((item) => (
               <TodoCard
