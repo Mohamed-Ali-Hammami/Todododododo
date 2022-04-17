@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Red+Hat+Mono:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Grape Nuts", cursive; */
+  /* font-family: "Red Hat Mono", monospace; 
+  font-family: "Architects Daughter", cursive;*/
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 70vh;
+  background-color: #ffeaa7;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
+}
+.App {
+  width: 100%;
+  /* height: 100%; */
+  /* max-height: inherit; */
+  min-height: 750px;
+  max-width: 1020px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+}
+
+.App h1 {
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #fdcb6e;
+  /* font-size: 1.5rem; */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.addodos {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-input {
+  min-width: 15rem;
+  width: 40vw;
+  max-height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  border-bottom: dashed 3px #fdcb6e;
+}
+.todo-input:focus {
+  outline: none;
+  border: 2px solid #fdcb6e;
+}
+.add-btn {
+  margin-left: 1rem;
+  background-color: #fdcb6e;
+  color: hsl(198, 1%, 29%);
+  border-radius: 20%;
+  border: 2px solid #fdcb6e;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px chocolate;
+}
+.add-btn:focus {
+  outline: none;
+}
+
+.dispalytodos {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dispalytodos .buttons {
+  margin-bottom: 2rem;
+}
+
+.dispalytodos .buttons button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdcb6e;
+}
+
+.dispalytodos .buttons button:focus {
+  outline: none;
+}
+
+.dispalytodos .buttons button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.dispalytodos ul {
+  list-style: none;
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  background: #fdcb6e;
+  background: radial-gradient(
+    circle,
+    hsla(38, 58, 32%, 0.9) 0%,
+    hsla(50, 91%, 65%, 0.9) 100%
+  );
+  margin: 0 1rem 1rem 0;
+  height: 10rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.card textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: wheat;
+  height: 70%;
+}
+
+.card textarea:disabled {
+  background-color: transparent;
+}
+
+.card .btns {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.card .btns button {
+  border-radius: 20%;
+  border: none;
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card .btns button:focus {
+  outline: none;
+}
+
+.completed {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  background-color: wheat;
+  border: 2px solid chocolate;
+  color: chocolate;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
